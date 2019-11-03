@@ -22,13 +22,13 @@ export const BlogPostTemplate = ({
             </h1>
             <div dangerouslySetInnerHTML={{ __html: content }} />
             <div style={{ marginTop: `4rem` }}>
-              <p>
+          {/*     <p>
                 {date} - posted by{' '}
                 <Link to={`/author/${author.slug}`}>{author.name}</Link>
-              </p>
+              </p> */}
               {categories && categories.length ? (
                 <div>
-                  <h4>Categories</h4>
+                  <h4>You may enjoy similar post:</h4>
                   <ul className="taglist">
                     {categories.map(category => (
                       <li key={`${category.slug}cat`}>
