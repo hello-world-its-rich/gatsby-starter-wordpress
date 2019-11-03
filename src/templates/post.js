@@ -105,7 +105,7 @@ export const pageQuery = graphql`
       title
       slug
       content
-      date(formatString: "MMMM DD, YYYY")
+      date(formatString: "MMMM DD, YYYY") 
       categories {
         name
         slug
